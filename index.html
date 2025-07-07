@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Luxe`ry Shopping</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      scroll-behavior: smooth;
+    }
+    .text-gold { color: #d4af37; }
+    .bg-gold { background-color: #d4af37; }
+  </style>
+</head>
+<body class="bg-black text-white relative">
+
+  <!-- Header -->
+  <header class="p-6 flex justify-between items-center border-b border-gray-700 fixed w-full bg-black z-50">
+    <b><h1 class="text-2xl font-bold text-gold">LUXÉ</h1></b>
+    <nav class="space-x-6">
+      <a href="#about-page" class="hover:text-gold transition">About</a>
+      <a href="#home" class="hover:text-gold transition">Home</a>
+      <a href="#products" class="hover:text-gold transition">Collection</a>
+      <a href="#contact" class="hover:text-gold transition">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <div class="pt-24" id="main-content">
+
+    <!-- About Us -->
+    <section id="about-page" class="px-6 py-20 bg-gray-950 min-h-screen">
+      <h2 class="text-4xl font-bold text-center mb-6 text-gold">About Us</h2>
+      <div class="text-gray-300 max-w-3xl mx-auto text-center leading-relaxed">
+        <p class="mb-4">
+          LUXÉ is more than a brand — it’s a statement. Founded by artisans who believe in the timeless power of luxury, our mission is to blend tradition and innovation to create truly elite products.
+        </p>
+        <p>
+          From precision-engineered watches to hand-crafted leather bags, we pride ourselves on unmatched quality and attention to detail. Every piece we create is a reflection of excellence, elegance, and exclusivity.
+        </p>
+        <p>
+
+At LUXÉ, we believe that luxury is more than a product — it’s an experience. Our brand is built on the principles of timeless elegance, superior craftsmanship, and bold individuality.
+
+Our signature gold watches are designed for those who value precision and prestige. Each timepiece is a blend of cutting-edge engineering and classic design — made to stand the test of time and trend.
+
+Our designer bags represent more than fashion; they are symbols of refined taste. Handcrafted from the finest materials, every bag reflects a unique balance of modern style and traditional quality.
+
+For those who make an impression without saying a word, our luxury perfumes offer a rich, unforgettable scent that defines confidence and character.
+
+From concept to creation, every product from LUXÉ is designed to inspire, empower, and elevate your lifestyle.
+
+LUXÉ — Live the elegance. Wear the legacy.
+        </p>
+      </div>
+    </section>
+
+    <!-- Home / Hero -->
+    <section id="home" class="min-h-screen flex items-center justify-center text-center px-4 bg-black">
+      <div id="hero-text" class="opacity-0 transition-opacity duration-1000 ease-in">
+        <h2 class="text-4xl md:text-6xl font-bold mb-4">Experience True Luxury</h2>
+        <p class="text-lg md:text-xl mb-8 text-gray-300 max-w-xl mx-auto">
+          Discover our premium range of handcrafted products that define elegance and sophistication.
+        </p>
+        <a href="#products" class="bg-gold hover:bg-yellow-400 text-black font-semibold py-3 px-6 rounded-full transition duration-300 shadow-lg">
+          Explore Collection
+
+        </a>
+        
+        
+        <a href="home.html" class="bg-gold hover:bg-yellow-400 text-black font-semibold py-3 px-6 rounded-full transition duration-300 shadow-lg">Know More</a>
+       <video src="https://www.youtube.com/playlist?list=PLmvJKzpQC6dzXzo5V9SARPXU3LK6cnAEq&jct=m5kt_bNzjpq6LWtai9KnvA">
+        "></video>
+    
+
+      </div>
+    </section>
+
+    <!-- Collection / Products -->
+    <section id="products" class="px-6 py-20 bg-black">
+      <h3 class="text-3xl font-semibold text-center mb-12 text-gold">Our Collection</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div class="bg-gray-900 rounded-xl p-6 hover:scale-105 transition transform duration-300 shadow-xl">
+          <img src="./images/watch5.jpeg" class="rounded mb-4" alt="Gold Watch" />
+          <h4 class="text-xl font-bold mb-2">Gold Watch</h4>
+          <p class="text-gray-400">Timeless elegance in every detail.</p>
+        </div>
+        <div class="bg-gray-900 rounded-xl p-6 hover:scale-105 transition transform duration-300 shadow-xl">
+          <img src="./images/designbag1.png"  class="rounded mb-4" alt="Designer Bag"/>
+          <h4 class="text-xl font-bold mb-2">Designer Bag</h4>
+          <p class="text-gray-400">Crafted from premium leather.</p>
+        </div>
+        <div class="bg-gray-900 rounded-xl p-6 hover:scale-105 transition transform duration-300 shadow-xl">
+          <img src="./images/Perfume.png" class="rounded mb-4" alt="Luxury Perfume" />
+          <h4 class="text-xl font-bold mb-2">Luxury Perfume</h4>
+          <p class="text-gray-400">A fragrance that defines presence.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="px-6 py-20 bg-gray-950">
+      <h3 class="text-3xl font-semibold text-center text-gold mb-6">Contact Us</h3>
+      <form id="contactForm" class="max-w-xl mx-auto bg-gray-900 p-8 rounded-xl shadow-lg space-y-6">
+        <div>
+          <label class="block text-left mb-1 text-gray-300">Name</label>
+          <input type="text" id="name" placeholder="Your Name" class="w-full p-3 rounded bg-gray-800 text-white border border-gray-700 focus:border-gold focus:outline-none" required />
+        </div>
+        <div>
+          <label class="block text-left mb-1 text-gray-300">Email</label>
+          <input type="email" id="email" placeholder="you@example.com" class="w-full p-3 rounded bg-gray-800 text-white border border-gray-700 focus:border-gold focus:outline-none" required />
+        </div>
+        <div>
+          <label class="block text-left mb-1 text-gray-300">Phone</label>
+          <input type="tel" id="phone" placeholder="+91-12345-67890" class="w-full p-3 rounded bg-gray-800 text-white border border-gray-700 focus:border-gold focus:outline-none" required />
+        </div>
+        <button type="submit" class="bg-gold hover:bg-yellow-400 text-black font-bold py-3 px-6 rounded-full transition duration-300">
+          Submit
+        </button>
+      </form>
+    </section>
+  </div>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn" class="hidden fixed bottom-6 right-6 bg-gold text-black px-4 py-2 rounded-full shadow-lg hover:bg-yellow-400 transition">
+    ↑ Top
+  </button>
+
+  <!-- Footer -->
+  <footer class="text-center p-6 border-t border-gray-700 text-sm text-gray-500 bg-black">
+    © 2025 LUXÉ. All rights reserved.
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Fade-in hero text
+    window.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("hero-text").classList.remove("opacity-0");
+    });
+
+    // Scroll-to-top button
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+    window.addEventListener("scroll", () => {
+      scrollTopBtn.classList.toggle("hidden", window.scrollY <= 200);
+    });
+    scrollTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    // Contact Form Submission
+    const form = document.getElementById("contactForm");
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const phone = document.getElementById("phone").value.trim();
+      if (name && email && phone) {
+        alert(`Thank you, ${name}!\nEmail: ${email}\nPhone: ${phone}`);
+        form.reset();
+      } else {
+        alert("Please fill in all fields.");
+      }
+    });
+    
+    
+  </script>
+ <h2>if you want learn javascript with free of cost </h2>
+ <h3>you can click here </h3>
+ </body>
+</html>
